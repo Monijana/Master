@@ -1,0 +1,36 @@
+[
+        {
+            "id" : 1 ,
+            "name" : "Dosa" , 
+            "description" : "Set of Crispy Dosas",
+            "image" : "./static/images/dosa.jpg",
+            "count"  : 0,
+            "type"  : "Veg"
+        },
+        {
+            "id" : 2 ,
+            "name" : "Idly" , 
+            "description" : "Set of soft idlies",
+            "image" : "",
+            "count"  : 0,
+            "type"  : "Veg"
+
+        },
+        {
+            "id" : 3 ,
+            "name" : "Poori" , 
+            "description" : "Set of Crispy Pooris",
+            "image" : "",
+            "count"  : 0,
+            "type"  : "Veg"
+        },
+        {
+            "id" : 4 ,
+            "name" : "Briyani" , 
+            "description" : "Spicy Briyani",
+            "image" : "",
+            "count"  : 0,
+            "type"  : "Non-Veg"
+        }
+        
+    ]

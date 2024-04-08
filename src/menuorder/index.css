@@ -1,0 +1,19 @@
+.Menu {
+    padding: 30px;
+    font-size: medium;
+}
+
+.Highlight {
+    background-color: yellow;
+  box-shadow: 0 0 20px yellow;
+}
+
+.Card {
+    /* width : '40%';
+    display : 'flex';
+    flexDirection : 'coloumn'; */
+    /* justify-content : 'center';
+    align-items : 'center'; */
+    margin-left: 35%;
+  align-items: center;
+}
