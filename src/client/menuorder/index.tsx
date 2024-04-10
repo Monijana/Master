@@ -4,7 +4,7 @@ import Fab from '@mui/material/Fab';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
-import FoodCards  from './card';
+import FoodCards from './card';
 
 
 const MenuOrder = () => {

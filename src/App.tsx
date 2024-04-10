@@ -1,24 +1,37 @@
-import React from 'react';
+import React , { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MenuOrder from './client/menuorder';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CartComponent from './client/cart/cart';
 
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Order Plsss!!!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
+        <div className="App-body">
+        {/* <MenuOrder></MenuOrder> */}
+        </div>
+        <Router>
+        <div>
+        <Routes>
+        <Route path="/" element={<MenuOrder/>}/>
+        <Route path="/cart" element={<CartComponent/>}/>
+        </Routes>
+        </div>
+        </Router>
+
+        {/* <Router>
+                <Route path="/" Component={CartComponent}/>
+                <Route path="/cart" Component={CartComponent}/>
+        </Router> */}
     </div>
   );
 }
