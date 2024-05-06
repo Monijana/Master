@@ -4,6 +4,7 @@ import './App.css';
 import MenuOrder from './client/menuorder';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CartComponent from './client/cart/cart';
+import MenuContextProvider from './client/context';
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
       </header>
         <div className="App-body">
         {/* <MenuOrder></MenuOrder> */}
-        </div>
+        </div>        
+        <MenuContextProvider>
         <Router>
         <div>
         <Routes>
@@ -27,11 +29,7 @@ function App() {
         </Routes>
         </div>
         </Router>
-
-        {/* <Router>
-                <Route path="/" Component={CartComponent}/>
-                <Route path="/cart" Component={CartComponent}/>
-        </Router> */}
+        </MenuContextProvider>
     </div>
   );
 }
